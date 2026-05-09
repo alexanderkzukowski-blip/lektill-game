@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lektíll — The First Offering</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Game wrapper centers the canvas and overlays on screen -->
+    <div id="game-wrapper">
+      <!-- Title shown above the canvas -->
+      <header id="game-title">
+        <h1>LEKTÍLL</h1>
+        <p class="subtitle">THE FIRST OFFERING</p>
+      </header>
+
+      <!-- Main canvas. The game renders everything here. -->
+      <canvas id="game-canvas" width="800" height="576"></canvas>
+
+      <!-- HUD overlay shown beneath the canvas -->
+      <div id="hud">
+        <div id="objective-panel" class="hud-panel">
+          <span class="hud-label">OBJECTIVE</span>
+          <span id="objective-text">Talk to the townspeople.</span>
+        </div>
+        <div id="controls-panel" class="hud-panel">
+          <span class="hud-label">CONTROLS</span>
+          <span class="controls-text">
+            <kbd>WASD</kbd>/<kbd>↑↓←→</kbd> Move &nbsp;·&nbsp;
+            <kbd>E</kbd>/<kbd>Space</kbd> Interact &nbsp;·&nbsp;
+            <kbd>R</kbd> Restart &nbsp;·&nbsp;
+            <kbd>Esc</kbd> Exit (after ending)
+          </span>
+        </div>
+      </div>
+
+      <footer id="game-footer">
+        <span>Fifth Age · Subterranean · Primordial</span>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
