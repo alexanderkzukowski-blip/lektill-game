@@ -1024,7 +1024,7 @@ function drawInteractHint() {
   let label = "";
   if (getFacingNPC()) label = "[E] Talk";
   else if (getFacingInscription()) label = "[E] Read";
-  else if (nearBulbis() && currentMapId === "chamber" && !gameState.hasBulbisLazul")
+  else if (nearBulbis() && currentMapId === "chamber" && !gameState.hasBulbisLazul)
     label = "[E] Take Bulbis Lazul";
 
   if (!label) return;
